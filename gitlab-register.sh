@@ -5,7 +5,7 @@ docker run --rm -v /data/gitlab/runner/:/etc/gitlab-runner gitlab/gitlab-runner 
   --executor "docker" \
   --docker-image docker:dind \
   --url "https://gitlab.com/" \
-  --registration-token $TOKEN \
+  --token $TOKEN \
   --description "projet-fil-rouge-runner" \
   --tag-list "projet-fil-rouge" \
   --run-untagged="true" \
